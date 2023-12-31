@@ -20,7 +20,7 @@ $(document).ready(function(){
 
     // 1. Scroll To Top 
 		$(window).on('scroll',function () {
-			if ($(this).scrollTop() > 600) {
+			if ($(this).scrollTop() > 200) {
 				$('.return-to-top').fadeIn();
 			} else {
 				$('.return-to-top').fadeOut();
@@ -36,14 +36,14 @@ $(document).ready(function(){
 	
 	// 2. slick carousel
 
-	    $(".testimonial-carousel").slick({
-	        infinite: true,
-	        centerMode: true,
-	        autoplay:true,
-	        slidesToShow: 5,
-	        slidesToScroll: 3,
-	        autoplaySpeed:1500,
-	        // the magic
+		$(".testimonial-carousel").slick({
+			infinite: true,
+			centerMode: true,
+			autoplay:true,
+			slidesToShow: 5,
+			slidesToScroll: 3,
+			autoplaySpeed:1500,
+	        	// the magic
 			responsive: [
 				{
 
@@ -80,21 +80,21 @@ $(document).ready(function(){
 
 				}
 			]
-	    });
+		});
 
 
 
     // 3. welcome animation support
 
-        $(window).load(function(){
-        	$(".welcome-hero-txt h2,.welcome-hero-txt p").removeClass("animated fadeInUp").css({'opacity':'0'});
-            $(".welcome-hero-serch-box").removeClass("animated fadeInDown").css({'opacity':'0'});
-        });
+		$(window).load(function(){
+			$(".welcome-hero-txt h2,.welcome-hero-txt p").removeClass("animated fadeInUp").css({'opacity':'0'});
+			$(".welcome-hero-serch-box").removeClass("animated fadeInDown").css({'opacity':'0'});
+		});
 
-        $(window).load(function(){
-        	$(".welcome-hero-txt h2,.welcome-hero-txt p").addClass("animated fadeInUp").css({'opacity':'0'});
-            $(".welcome-hero-serch-box").addClass("animated fadeInDown").css({'opacity':'0'});
-        });
+		$(window).load(function(){
+			$(".welcome-hero-txt h2,.welcome-hero-txt p").addClass("animated fadeInUp").css({'opacity':'0'});
+			$(".welcome-hero-serch-box").addClass("animated fadeInDown").css({'opacity':'0'});
+		});
 
 	// 4. feather icon
 

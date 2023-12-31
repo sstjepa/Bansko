@@ -30,7 +30,9 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     font-size: 14px;
     color: #a09e9c;
     text-transform: initial;
@@ -193,7 +195,7 @@ nav.navbar.bootsnav {
 nav.navbar.bootsnav ul.nav>li>a {
     color: #859098;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
     -webkit-transition: 0.3s linear;
     -moz-transition: 0.3s linear;
@@ -208,11 +210,11 @@ nav.navbar.bootsnav ul.nav>li>a {
 
 nav.navbar.bootsnav ul.nav>li>a:hover,
 nav.navbar.bootsnav ul.nav>li>a:focus {
-    color: #283618;
+    color: #606C38;
 }
 
 nav.navbar.bootsnav ul.nav>li.active>a {
-    color: #283618;
+    color: #606C38;
 }
 
 nav.navbar.bootsnav ul.nav>li.dropdown>a.dropdown-toggle:after {
@@ -295,16 +297,16 @@ nav.navbar.bootsnav .navbar-toggle i {
 }
 
 .welcome-hero-txt h2 {
-    font-size: 48px;
+    font-size: 40px;
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 2.4px;
+    letter-spacing: 2px;
     line-height: 1.4;
 }
 
 .welcome-hero-txt p {
-    font-size: 18px;
+    font-size: 22px;
     color: #fcfcfc;
     margin-top: 25px;
 }
@@ -318,8 +320,9 @@ nav.navbar.bootsnav .navbar-toggle i {
     display: flex;
     background: #fff;
     height: 70px;
-    border-radius: 3px;
+    border-radius: 8px;
     width: 85%;
+    justify-content: space-between;
 }
 
 .single-welcome-hero-form {
@@ -327,18 +330,18 @@ nav.navbar.bootsnav .navbar-toggle i {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 50%;
-    padding: 0 30px;
+    width: 30%;
+    border-right: 1px solid #edeff1;
+    /* padding: 0 30px; */
 }
 
-.single-welcome-hero-form:first-child {
-    border-right: 1px solid #edeff1;
+.single-welcome-hero-form:last-child {
+    border-right: none;
 }
 
 .single-welcome-hero-form input {
     margin-left: 10px;
     height: 70px;
-    width: 300px;
     border: 0;
     background: transparent;
 }
@@ -368,7 +371,7 @@ nav.navbar.bootsnav .navbar-toggle i {
     background: #BC6C25;
     text-transform: capitalize;
     margin-left: 30px;
-    border-radius: 3px;
+    border-radius: 8px;
     -webkit-transition: 0.3s linear;
     -moz-transition: 0.3s linear;
     -ms-transition: 0.3s linear;
@@ -416,7 +419,7 @@ nav.navbar.bootsnav .navbar-toggle i {
     width: 205px;
     height: 170px;
     background: #fff;
-    border-radius: 3px;
+    border-radius: 8px;
     box-shadow: 0 0px 10px rgba(71, 71, 71, .2);
     -webkit-transition: .3s linear;
     -moz-transition: .3s linear;
@@ -462,14 +465,13 @@ nav.navbar.bootsnav .navbar-toggle i {
     color: #fff;
     background: #606C38;
     box-shadow: 0 5px 10px rgba(71, 71, 71, .4);
-    font
 }
 
 /*-------------------------------------
         6. Works 
 --------------------------------------*/
 .works {
-    padding: 90px;
+    padding: 0 0 90px;
 }
 
 .works-content {
@@ -479,7 +481,7 @@ nav.navbar.bootsnav .navbar-toggle i {
 .single-how-works {
     text-align: center;
     padding: 50px 42px;
-    border-radius: 3px;
+    border-radius: 8px;
     box-shadow: 0 0px 5px rgba(71, 71, 71, .2);
     margin-bottom: 30px;
     -webkit-transition: .3s linear;
@@ -536,7 +538,7 @@ nav.navbar.bootsnav .navbar-toggle i {
     background: transparent;
     color: #767f86;
     border: 1px solid #d3d6d9;
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 .single-how-works:hover h2 a,
@@ -573,7 +575,7 @@ nav.navbar.bootsnav .navbar-toggle i {
 .single-explore-item {
     background: #fff;
     border: 1px solid #edeff1;
-    border-radius: 3px;
+    border-radius: 8px;
     margin-bottom: 25px;
     -webkit-transition: .3s linear;
     -moz-transition: .3s linear;
@@ -585,6 +587,7 @@ nav.navbar.bootsnav .navbar-toggle i {
 .single-explore-img {
     position: relative;
     overflow: hidden;
+    border-radius: 8px;
 }
 
 .single-explore-img:before {
@@ -625,7 +628,7 @@ nav.navbar.bootsnav .navbar-toggle i {
     height: 21px;
     line-height: 21px;
     background: #FEFAE0;
-    border-radius: 3px;
+    border-radius: 8px;
     color: #000;
     text-transform: capitalize;
     text-align: center;
@@ -648,10 +651,11 @@ nav.navbar.bootsnav .navbar-toggle i {
     text-align: center;
     margin-left: 5px;
     color: #cbcccd;
+    border-radius: 8px;
 }
 
 .single-explore-image-icon-box ul li:hover i {
-    color: #267dff;
+    color: #00c61c;
 }
 
 .single-explore-txt {
@@ -897,7 +901,7 @@ nav.navbar.bootsnav .navbar-toggle i {
     position: relative;
     display: flex;
     align-items: center;
-    background: url(../../images/20230220_114315.jpg)no-repeat fixed;
+    background: url(../../images/20230220_114315.png)no-repeat fixed;
     background-position: center;
     background-size: cover;
     padding: 210px 0 210px;
@@ -1007,7 +1011,8 @@ iframe {
     height: 450px;
     float: right;
     margin-left: 15px;
-    box-shadow: 0 5px 10px rgba(71, 71, 71, .4);
+    box-shadow: 0 5px 10px rgba(71, 71, 71, .6);
+    border-radius: 8px;
 }
 
 
@@ -1019,11 +1024,11 @@ iframe {
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 30%;
     background-color: #606C38;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(71, 71, 71, .4);
     border-radius: 8px;
     padding: 15px;
 }
@@ -1031,6 +1036,11 @@ iframe {
 .weather-container h1 {
     color: #DDA15E;
     font-size: 30px;
+}
+
+.weather-container h2 {
+    color: #fff;
+    font-size: 26px;
 }
 
 #weather-info {
@@ -1041,10 +1051,7 @@ iframe {
 
 .weather {
     display: flex;
-
     width: 100%;
-    height: 100%;
-
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: space-between;
@@ -1052,8 +1059,13 @@ iframe {
     align-items: center;
 }
 
+#info {
+    width: 100%;
+    display: flex;
+}
 
 .info-item {
+    padding: 0 15px;
     display: flex;
     width: 100%;
     margin-bottom: 10px;
@@ -1069,15 +1081,26 @@ iframe {
     font-size: 16px;
     padding: 0;
     color: #000;
+    text-transform: capitalize;
 }
 
-#date {
+.date {
     justify-content: center;
     text-align: center;
 }
 
+.date #temperature {
+    font-size: 36px;
+}
+
+.date #weatherDescription {
+    font-size: 18px;
+}
+
 #dateTime,
 #temperature,
+#humidity,
+#wind,
 #weatherDescription,
 #sunrise,
 #sunset {
@@ -1191,7 +1214,7 @@ iframe {
 .footer-social span {
     display: inline-block;
     color: #afb4bf;
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 15px;
     -webkit-transition: .3s;
     -moz-transition: .3s;
@@ -1212,8 +1235,9 @@ iframe {
 .footer-social span {
     margin-right: 15px;
     margin-left: 0;
-    font-size: 14px;
-    color: #a5adb3;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
 }
 
 .footer-social span:hover {

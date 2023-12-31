@@ -8,10 +8,14 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 	<!--font-family-->
-	<link
-		href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-		rel="stylesheet"
-	/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/> -->
+	
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> -->
 
 	<!-- title of site -->
 	<title>Apartman Nina</title>
@@ -139,13 +143,9 @@
 	<section id="home" class="welcome-hero">
 		<div class="container">
 		<div class="welcome-hero-txt">
-			<h2>
-			best place to find and explore <br />
-			that all you need
-			</h2>
+			<h2>Step into a world of hospitality and comfort. <br> Welcome to your home away from home!</h2>
 			<p>
-			Find Best Place, Restaurant, Hotel, Real State and many more think
-			in just One click
+				Step into a world of hospitality and comfort. <br>Welcome to your home away from home!
 			</p>
 		</div>
 		<!--bio nekad search-->
@@ -210,11 +210,11 @@
 	<!--works start -->
 	<section id="works" class="works">
 		<div class="container">
-		<div class="section-header">
+		<!-- <div class="section-header">
 			<h2>how it works</h2>
 			<p>Learn More about how our website works</p>
-		</div>
-		<!--/.section-header-->
+		</div> -->
+
 		<div class="works-content">
 			<div class="row">
 			<div class="col-md-4 col-sm-6">
@@ -280,7 +280,6 @@
 			</div>
 		</div>
 		</div>
-		<!--/.container-->
 	</section>
 	<!--/.works-->
 	<!--works end -->
@@ -290,7 +289,7 @@
 		<div class="container">
 		<div class="section-header">
 			<h2>gallery</h2>
-			<p>Discover the charm of our Apartment near the Gondola through gallery, offering a glimpse into the cozy interiors, scenic surroundings, and the inviting ambiance awaiting you on your next ski retreat.</p>
+			<p>Indulge in the allure of our apartment as you peruse our gallery, offering a glimpse into the warm interiors, picturesque surroundings, and the welcoming ambiance that awaits you on your upcoming ski retreat.</p>
 		</div>
 		<!--/.section-header-->
 		<div class="explore-content">
@@ -362,7 +361,7 @@
 				<img src="images/20230221_160925.png" alt="explore image" />
 				<div class="single-explore-img-info">
 					<button>
-					Bed Room
+					Bedroom
 					</button>
 					<div class="single-explore-image-icon-box">
 					<ul>
@@ -581,20 +580,23 @@
 						<div class="single-welcome-hero-form">
 							<h3>check-in</h3>
 							<form action="index.html">
-								<input type="text" placeholder="Ex: palce, resturent, food, automobile" />
+								<input type="text" placeholder="add date:" />
 							</form>
-							<div class="welcome-hero-form-icon">
-								<i class="flaticon-list-with-dots"></i>
-							</div>
+							
 						</div>
 						<div class="single-welcome-hero-form">
 							<h3>checkout</h3>
 							<form action="index.html">
-								<input type="text" placeholder="Ex: london, newyork, rome" />
+								<input type="text" placeholder="add date:" />
 							</form>
-							<div class="welcome-hero-form-icon">
-								<i class="flaticon-gps-fixed-indicator"></i>
-							</div>
+							
+						</div>
+						<div class="single-welcome-hero-form">
+							<h3>guests</h3>
+							<form action="index.html">
+								<input type="text" placeholder="Persons" />
+							</form>
+							
 						</div>
 					</div>
 					<div class="welcome-hero-serch">
@@ -615,34 +617,45 @@
 		<!--weather map strat -->
 		<section id="contact" class="subscription">
 			<div class="container">
+				
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d743.2440846952752!2d23.476587693983866!3d41.82880763596793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14abadb3d3bce907%3A0x7a640b71ec11530a!2zQmFuc2tvIFJveWFsIFRvd2VycyAtINCl0L7RgtC10Lsg0JHQsNC90YHQutC-INCg0L7Rj9C7INCi0LDRg9GK0YDRgQ!5e0!3m2!1sen!2srs!4v1703801870048!5m2!1sen!2srs" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				
 				<div class="weather-container">
-					<h1>Weather:</h1>
-					<div id="date">
+					<h1>Weather</h1>
+					<h2>Bansko</h2>	
+					<div class="date">
 						<div id="dateTime"></div>
+					</div>
+					<div class="date">
+						<div id="temperature"></div>
+					</div>
+
+					<div class="date">
+						<div id="weatherDescription"></div>
 					</div>
 
 					<div id="weatherInfo" class="weather">
-						
-						<div class="info-item">
-							<div class="label">Temperatura:</div>
-							<div id="temperature"></div>
-						</div>
+						<div id="info">
+							<div class="info-item">
+								<div class="label">humidity:</div>
+								<div id="humidity"></div>
+							</div>
 
-						<div class="info-item">
-							<div class="label">Vreme:</div>
-							<div id="weatherDescription"></div>
+							<div class="info-item">
+								<div class="label">wind:</div>
+								<div id="wind"></div>
+							</div>
 						</div>
-						
-						<div class="info-item">
-							<div class="label">Izlazak sunca:</div>
-							<div id="sunrise"></div>
-						</div>
-						
-						<div class="info-item">
-							<div class="label">Zalazak sunca:</div>
-							<div id="sunset"></div>
+						<div id="info">							
+							<div class="info-item">
+								<div class="label">sunrise:</div>
+								<div id="sunrise"></div>
+							</div>
+							
+							<div class="info-item">
+								<div class="label">sunset:</div>
+								<div id="sunset"></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -665,10 +678,8 @@
 			<div class="col-sm-7">
 			<div class="footer-social">
 				<span><i class="fa fa-phone"> +1 (222) 777 8888</i></span>
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-linkedin"></i></a>
-				<a href="#"><i class="fa fa-google-plus"></i></a>
+				<a href="https://www.facebook.com/people/NiNa-apartment/100076413362213/" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.instagram.com/_apartmentninabansko/" target="_blank"><i class="fa fa-instagram"></i></a>
 			</div>
 			</div>
 			</div>
@@ -722,6 +733,8 @@
 
 	<!-- weather.js -->
 	<script src="assets/js/weather.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+
 
 
 	<!--Custom JS-->
