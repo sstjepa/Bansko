@@ -10,39 +10,30 @@
           const temperature = Math.round(data.main.temp);
           const weatherDescription = data.weather[0].description;
           const humidity=data.main.humidity;
-          const wind = data.wind.speed*3.6;
-          const windkmh=(wind).toFixed(2);
+          const wind = data.wind.speed;
           const sunrise = luxon.DateTime.fromMillis(data.sys.sunrise * 1000);
           const sunset = luxon.DateTime.fromMillis(data.sys.sunset * 1000);
           const currentTime = luxon.DateTime.local();
-
-          // const sunrise = new Date(data.sys.sunrise * 1000);
-          // const sunset = new Date(data.sys.sunset * 1000);
-          //const currentTime = new Date();
+          const iconCode = data.weather[0].icon;
      
           // Prikazivanje informacija u odgovarajućim divovima
           document.getElementById('temperature').textContent = `${temperature}°C`;
           document.getElementById('weatherDescription').textContent = weatherDescription;
           document.getElementById('humidity').textContent=`${humidity}%`;
-          document.getElementById('wind').textContent = `${windkmh} km/h`;
+          document.getElementById('wind').textContent = `${wind} m/s`;
           document.getElementById('sunrise').textContent = formatTime(sunrise);
           document.getElementById('sunset').textContent = formatTime(sunset);
           document.getElementById('dateTime').textContent = formatDateTime(currentTime);
+
+          const weatherIconElement = document.getElementById('weather-icon');
+          weatherIconElement.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`; // Set the icon URL
+          weatherIconElement.alt = weatherDescription;
           })
           .catch(error => {
           console.error('Error fetching data:', error);
           });
      }
      
-     // function formatTime(date) {
-     //      return date.toLocaleTimeString('en-US', { hour12: false ,hour: '2-digit', minute: '2-digit' });
-     // }
-     
-     // function formatDateTime(date) {
-     //      const options = { day: '2-digit', month: 'long', year: 'numeric', hour12: false ,hour: '2-digit', minute: '2-digit' };
-     //      return date.toLocaleDateString('en-US', options);
-     // }
-
      function formatTime(dateTime) {
           return dateTime.toLocaleString(luxon.DateTime.TIME_24_SIMPLE);
      }
@@ -55,3 +46,11 @@
 
      setInterval(getWeather, 60000);
      
+
+
+
+
+     const content=document.querySelector(".content");
+          if(content){
+               content.addEventListener("contextmenu",(e)=>e.preventDefault())
+          }

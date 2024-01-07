@@ -1,9 +1,5 @@
-	/*
-  	Flaticon icon font: Flaticon
-  	Creation date: 16/05/2018 10:21
-  	*/
-	@import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
-
+	@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css');
+	@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
 
 	@font-face {
@@ -27,7 +23,11 @@
 	[class^="flaticon-"]:before,
 	[class*=" flaticon-"]:before,
 	[class^="flaticon-"]:after,
-	[class*=" flaticon-"]:after {
+	[class*=" flaticon-"]:after,
+	[class^="fi-rr-"]:before,
+	[class*=" fi-rr-"]:before,
+	[class^="fi-rr-"]:after,
+	[class*=" fi-rr-"]:after {
 	  font-family: Flaticon;
 	  font-size: 20px;
 	  font-style: normal;
