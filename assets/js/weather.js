@@ -1,4 +1,8 @@
+
 function getWeather() {
+	require('dotenv').config();
+
+	//const apiKey = process.env.API_KEY;
 	const apiKey = "087fa9f119ac25d29a10eb64e17e4e2f";
 	//const city = 'Bansko';
 	//const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
