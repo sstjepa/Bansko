@@ -1,2 +1,3 @@
 # Bansko
- Sajt Bansko
+
+Private website for custom use
