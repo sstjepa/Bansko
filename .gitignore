@@ -400,6 +400,7 @@ FodyWeavers.xsd
 *.sln.iml
 
 # Photos
-!.jpg
-!.png
+*.jpg
+*.png
+*.jpeg
 .env
